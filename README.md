@@ -1,2 +1,2 @@
-# msc15
-# msc15
+# Hi! Welcome to reposotory
+# "msc15.ru" project.
