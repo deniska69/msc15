@@ -1,2 +1,1 @@
-# Hi! Welcome to reposotory
-# "msc15.ru" project.
+# Hi! Welcome to page repository "msc15.ru" project.
