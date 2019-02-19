@@ -7,6 +7,6 @@ from .models import Profile
 
 class ProfileAdmin(admin.ModelAdmin):
     can_delete = False
-    fields = ('username',  'password', 'name_n', 'name_p', 'name_f', 'position', 'birthday', 'note',)
+    fields = ('username',  'password', 'email', 'name_n', 'name_p', 'name_f', 'position', 'birthday', 'phone', 'note',)
 
 admin.site.register(Profile, ProfileAdmin)

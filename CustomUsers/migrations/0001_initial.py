@@ -33,7 +33,6 @@ class Migration(migrations.Migration):
                 ('name_p', models.CharField(max_length=50, verbose_name='Отчество:')),
                 ('name_f', models.CharField(max_length=50, verbose_name='Фамилия:')),
                 ('position', models.CharField(max_length=100, verbose_name='Должность:')),
-                ('birthday', models.CharField(max_length=100, verbose_name='Дата рождения:')),
                 ('note', models.CharField(max_length=200, verbose_name='Заметка:')),
                 ('groups', models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='user_set', related_query_name='user', to='auth.Group', verbose_name='groups')),
                 ('user_permissions', models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.Permission', verbose_name='user permissions')),
