@@ -20,17 +20,22 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i0e8*$&05%1t(8kin+3wtrrc9!(nym@35lkjo1*l)02zw6np@p'
+SECRET_KEY = 'oqb5vndp4(#qcsxz2ot4qlulak0h2^yskoaog*konqj2i!e2qo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'CustomUsers.Profile'
+
 
 # Application definition
 
 INSTALLED_APPS = [
+    'CustomUsers',
+
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +80,6 @@ WSGI_APPLICATION = 'msc15.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'u0646422_msc15db',
         'USER': 'u0646422_msc15db',
