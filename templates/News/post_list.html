@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for post in post_ls %}
+    <h2><a href="{% url 'post_pg' pk=post.id %}">{{ post.title }}</a></h2>
+    <p>{{ post.text }}</p>
+    <p>{{ post.date_cr }}</p>
+{% endfor %}
+{% endblock content %}
