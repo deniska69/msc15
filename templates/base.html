@@ -4,12 +4,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static "images/base/favicon.ico" %}" rel="icon"  type="image/png" sizes="32x32">
     <title>{% block title %}{% endblock title %}</title>
   </head>
-  <body>
-    <div class="container-fluid" style="height: 12vh; background-color: #F6F2F3">
+  <body style="background-color: #F6F2F3;">
+
+    <!-- Шапка -->
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-2">
           <img class="img_head" src="{% static "images/base/logo.png" %}">
@@ -33,18 +36,54 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-2">
-          {% block content %}{% endblock content %}
+    <!-- Меню -->
+    <div class="col-lg-10 offset-lg-1 no-gutters" style="margin-top: 1vh;">
+      <div class="row align-items-start">
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">Главная</a>
+        </div>
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">Сведения об ОУ</a>
+        </div>
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">Обучение</a>
+        </div>
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">ГИА И ОГЭ</a>
+        </div>
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">Приём в школу</a>
+        </div>
+        <div class="col col_padding">
+          <a href="#" class="btn_menu btn-block">Контакты</a>
         </div>
       </div>
     </div>
 
+    <!-- Банер -->
+    <div class="col-lg-10 offset-lg-1" style="padding: 0vh 0.1vw 0vh 0.1vw; margin-top: 1vh;">
+      <div id="banners_sh" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#banners_sh" data-slide-to="0" class="active"></li>
+          <li data-target="#banners_sh" data-slide-to="1"></li>
+          <li data-target="#banners_sh" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static "images/banners/banner_0.png" %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static "images/banners/banner_0.png" %}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static "images/banners/banner_0.png" %}" alt="Third slide">
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static "js/jquery-3.2.1.slim.min.js" %}"></script>
+    <script src="{% static "js/popper.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
   </body>
 </html>
