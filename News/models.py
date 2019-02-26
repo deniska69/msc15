@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
-# Create your models here.
 class Post(models.Model):
     author = models.ForeignKey(User, null=True, verbose_name='Автор:', on_delete=models.SET_NULL)
     title = models.CharField(max_length=100, null=False, blank=False, verbose_name='Заголовок:')
