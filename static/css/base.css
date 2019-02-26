@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Ropa Sans Pro';
+    src: url(../fonts/RopaSansProRegular.otf);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .text_head_l {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 18pt;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #465A78;
+      margin-top: 1vh;
+  }
+  .text_head_r {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 1.5vw;
+      font-weight: normal;
+      line-height: 1.1;
+      text-align: right;
+      color: #465A78;
+  }
+  .img_head {
+    float: right;
+    margin-top: 2vh;
+    height: 8vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text_head_l {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 3vh;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #465A78;
+      margin-top: 1vh;
+  }
+
+  .text_head_r {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 2vh;
+      font-weight: normal;
+      line-height: 1.1;
+      text-align: right;
+      color: #465A78;
+  }
+  .img_head {
+    float: right;
+    margin-top: 1vh;
+    height: 10vh;
+  }
+}
