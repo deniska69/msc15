@@ -4,82 +4,47 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .text_head_l {
-      font-family: 'Ropa Sans Pro', Arial;
-      font-size: 18pt;
-      font-weight: normal;
-      line-height: 1.1;
-      color: #465A78;
-      margin-top: 1vh;
-  }
-  .text_head_r {
-      font-family: 'Ropa Sans Pro', Arial;
-      font-size: 1.5vw;
-      font-weight: normal;
-      line-height: 1.1;
-      text-align: right;
-      color: #465A78;
-  }
-  .img_head {
-    float: right;
-    margin-top: 2vh;
-    height: 8vh;
-  }
-  .btn_menu {
-    background-color: #F6F2F3;
-    color: #465A78;
-    cursor:pointer;
-    font-family: 'Ropa Sans Pro', Arial;
-    font-size: 2.5svh;
-    border-width: 0.1vh;
-    border-style: solid;
-    border-color: #465A78;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .text_head_l {
-      font-family: 'Ropa Sans Pro', Arial;
-      font-size: 3vh;
-      font-weight: normal;
-      line-height: 1.1;
-      color: #465A78;
-      margin-top: 1vh;
-  }
-
-  .text_head_r {
-      font-family: 'Ropa Sans Pro', Arial;
-      font-size: 2vh;
-      font-weight: normal;
-      line-height: 1.1;
-      text-align: right;
-      color: #465A78;
-  }
-  .img_head {
+    .img_head {
     float: right;
     margin-top: 1vh;
-    height: 10vh;
+    height: 8vh;
+  }
+  .text_head_l {
+      font-family: 'Ropa Sans Pro', Arial;
+      line-height: 1.1;
+      color: #465A78;
+      margin-top: 1vh;
+      font-size: 1.2rem;
+  }
+  .text_head_r {
+      font-family: 'Ropa Sans Pro', Arial;
+      line-height: 1.1;
+      text-align: right;
+      color: #465A78;
+      margin-top: 1vh;
+      margin-right: 2vw;
   }
   .btn_menu {
-    background-color: #F6F2F3;
     color: #465A78;
     cursor:pointer;
     font-family: 'Ropa Sans Pro', Arial;
-    font-size: 3vh;
-    border-width: 0.3vh;
+    border-width: 0.2vh;
     border-style: solid;
     border-color: #465A78;
     text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .btn_menu_col {
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }
 
-.btn_menu:hover, .btn_menu:active {
-  background-color: #465a78;
-  color: #F6F2F3;
-  text-decoration: none;
-}
+@media (min-width: 1200px) {}
 
-.col_padding {
-  padding: 0vh 0.1vw 0vh 0.1vw;
-}
+  .btn_menu:hover, .btn_menu:active {
+    background-color: #465a78;
+    color: #F6F2F3;
+    text-decoration: none;
+  }

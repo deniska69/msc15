@@ -1,0 +1,81 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .btn_menu {
+    background-color: #F6F2F3;
+    color: #465A78;
+    cursor:pointer;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 2.5vh;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #465A78;
+    text-align: center;
+  }
+  .news_tb {
+    color: #465A78;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 2.5vh;
+  }
+  .news_hr {
+    border: 0.1vw solid #465A78;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text_head_l {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 3vh;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #465A78;
+      margin-top: 1vh;
+  }
+
+  .text_head_r {
+      font-family: 'Ropa Sans Pro', Arial;
+      font-size: 2vh;
+      font-weight: normal;
+      line-height: 1.1;
+      text-align: right;
+      color: #465A78;
+  }
+  .img_head {
+    float: right;
+    margin-top: 1vh;
+    height: 5vh;
+  }
+  .btn_menu {
+    background-color: #F6F2F3;
+    color: #465A78;
+    cursor:pointer;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 3vh;
+    border-width: 0.3vh;
+    border-style: solid;
+    border-color: #465A78;
+    text-align: center;
+  }
+  .news_tb {
+    color: #465A78;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 4vh;
+  }
+  .news_hr {
+    border: 1.5px solid #465A78;
+    margin-top: 0;
+  }
+  .dir_sign {
+    color: #465A78;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 3vh;
+  }
+}
+
+.news_il {
+  height: 40vh;
+  border-width: 0.3vh;
+  border-style: solid;
+  border-color: #465A78;
+}
