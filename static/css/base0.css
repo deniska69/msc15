@@ -1,28 +1,3 @@
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-  .btn_menu {
-    background-color: #F6F2F3;
-    color: #465A78;
-    cursor:pointer;
-    font-family: 'Ropa Sans Pro', Arial;
-    font-size: 2.5vh;
-    border-width: 0.2vh;
-    border-style: solid;
-    border-color: #465A78;
-    text-align: center;
-  }
-  .news_tb {
-    color: #465A78;
-    font-family: 'Ropa Sans Pro', Arial;
-    font-size: 2.5vh;
-  }
-  .news_hr {
-    border: 0.1vw solid #465A78;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .text_head_l {
       font-family: 'Ropa Sans Pro', Arial;
@@ -71,11 +46,4 @@
     font-family: 'Ropa Sans Pro', Arial;
     font-size: 3vh;
   }
-}
-
-.news_il {
-  height: 40vh;
-  border-width: 0.3vh;
-  border-style: solid;
-  border-color: #465A78;
 }
