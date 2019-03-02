@@ -13,4 +13,4 @@ class Post(models.Model):
         verbose_name_plural = 'Статьи'
 
     def __str__(self):
-        return self.title
+        return "{} — {}".format(self.date_cr.strftime('%d.%m.%Y  %H:%M:%S'), self.title)

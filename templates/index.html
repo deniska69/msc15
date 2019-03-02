@@ -28,10 +28,9 @@
     <div class="col-lg-9">
       <text class="text_t">Новости</text>
       <hr class="news_hr" style="margin-right: 2px;">
-
       <div class="container-fluid" style="padding: 0;">
         <div class="row justify-content-center no-gutters">
-          {% for post in post_ls %}
+          {% for post in post_last %}
             <div class="col-lg-4">
               <div class="news_last">
                 <text class="text_t">{{ post.title }}</text><br>
@@ -41,36 +40,8 @@
           {% endfor %}
         </div>
       </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="container-fluid" style="padding: 0;">
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-4">
-            <div class="news_last">
-              <text class="text_t">Демонстрация наработок нового оформления!</text><br>
-              <text class="text_d">26.02.2019</text>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="news_last">
-              <text class="text_t">Приобретён домен:
-              msc15.ru</text><br>
-              <text class="text_d">05.02.2019</text>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="news_last">
-              <text class="text_t">Мы начали разрабатывать новый сайт школы!</text><br>
-              <text class="text_d">01.02.2019</text>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
     <div class="col-lg-3" style="padding-left: 2vw;">
       <text class="text_t">Директор школы</text>
       <hr class="news_hr">
