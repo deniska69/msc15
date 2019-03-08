@@ -85,15 +85,13 @@
   }
 .ftr_a:link, .ftr_a:visited, .ftr_a:active, .ftr_a:hover {
     color: #D9D5D6;
-    /*font-family: 'Ropa Sans Pro', Arial;*/
     font-size: 0.7rem;
     cursor: pointer;
-    /*padding-bottom: -10vh;*/
-
+    text-decoration:none;
   }
   .ftr-col {
     line-height: 1.1;
-    margin-left: 6vw;
+    margin-left: 3vw;
     margin-top: 1vh;
   }
   .ftr_text {
