@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}МБОУ СОШ № 15 пгт. Мундыбаш{% endblock title %}
 {% block content %}
 
+<!-- Карусель -->
 <div class="container-fluid" style="margin-top: 1vh;">
   <div id="banners_sh" class="carousel slide" data-ride="carousel" data-interval="5000">
     <ol class="carousel-indicators">
@@ -23,8 +25,11 @@
   </div>
 </div>
 
+<!--Осноной блок -->
 <div class="container-fluid" style="margin-top: 2vh;">
   <div class="row no-gutters">
+
+    <!-- Последние 3 новости -->
     <div class="col-lg-9">
       <text class="text_t">Новости</text>
       <hr class="news_hr" style="margin-right: 2px;">
@@ -33,15 +38,26 @@
           {% for post in post_last %}
             <div class="col-lg-4">
               <div class="news_last">
-                <text class="text_t">{{ post.title }}</text><br>
+                {% if post.img_preview %}
+                <img src="{{ MEDIA_URL }}{{ post.img_preview.url }}" class="img_news">
+                {% else %}
+                <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
+                {% endif %}
+                <div class="col" style="padding: 0 0.5vw 0 0.5vw;">
+                  <text class="text_t" style="">{{ post.title }}</text><br>
+                </div>
                 <text class="text_d">{{ post.date_cr }}</text>
               </div>
             </div>
           {% endfor %}
         </div>
+        <div class="row justify-content-end" style="margin-right: 0; margin-top: 1vh;">
+          <a href="/news" class='text_b'>Все новости >></a>
+        </div>
       </div>
     </div>
 
+    <!-- Директор -->
     <div class="col-lg-3" style="padding-left: 2vw;">
       <text class="text_t">Директор школы</text>
       <hr class="news_hr">
@@ -53,25 +69,7 @@
         direktor@msc15.ru
       </text>
     </div>
-  </div>
-</div>
 
-<div class="container-fluid" style="margin-top: 2vh;">
-  <div class="row no-gutters">
-    <div class="col-md-9" style="">
-
-      <div class="container" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; ">
-        <dir class="row" style="padding-left: 0; margin: inherit; width: inherit;">
-          <div class="col-md-4 news_il"></div>
-          <div class="col-md-4 news_il"></div>
-          <div class="col-md-4 news_il"></div>
-        </dir>
-      </div>
-    </div>
-    <div class="col-md-3" style="">
-
-
-    </div>
   </div>
 </div>
 

@@ -40,7 +40,7 @@
     <div class="container-fluid" style="margin-top: 2vh; padding-right: 14px; padding-left: 14px;">
       <div class="row justify-content-center no-gutters">
         <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">Главная</a>
+          <a href="/" class="btn_menu">Главная</a>
         </div>
         <div class="col btn_menu_col">
           <a href="#" class="btn_menu">Сведения об ОУ</a>
@@ -61,6 +61,38 @@
     </div>
 
     {% block content %}{% endblock content %}
+
+    <!-- Футер -->
+    <div class="container-fluid" style="padding: 0; margin-top: 10vh;">
+      <div class="row no-gutters ftr">
+        <div class="col ftr-col ftr_text">
+          <p class="ftr_p">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
+          ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>
+          <p class="ftr_p">"СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 15"</p>
+        </div>
+        <div class="col ftr-col">
+          <ul class="list-unstyled">
+            <li><a class="ftr_a" href="/">Главная</a></li>
+            <li><a class="ftr_a" href="#">Сведения об ОУ</a></li>
+            <li><a class="ftr_a" href="#">Обучение</a></li>
+            <li><a class="ftr_a" href="#">ГИА и ОГЭ</a></li>
+            <li><a class="ftr_a" href="#">Приём в школу</a></li>
+            <li><a class="ftr_a" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col ftr-col"></div>
+        <div class="col ftr-col ftr_text">
+          <p class="ftr_p">Все права защищены.</p>
+          <p class="ftr_p">Запрещено любое копирование материалов ресурса без письменного согласия администрации сайта.</p>
+          <p class="ftr_p">© 2019</p>
+        </div>
+      </div>
+      <!--<div class="row justify-content-end" style="height: 0;">
+        <div class="col-lg-3" style="position: relative; top: -27.2vh; padding: 0;">
+          <img class="ftr_img" src="{% static "images/base/logo_footer.png" %}" style="height: 9vh;">
+        </div>
+      </div>-->
+    </div>
 
     <script src="{% static "js/jquery-3.2.1.slim.min.js" %}"></script>
     <script src="{% static "js/popper.min.js" %}"></script>

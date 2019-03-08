@@ -7,6 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100, null=False, blank=False, verbose_name='Заголовок:')
     text = models.CharField(max_length=1000, null=False, blank=True, verbose_name='Текст:')
     date_cr = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания:')
+    img_preview = models.ImageField(null=True, blank=True, upload_to='News/previews')
 
     class Meta:
         verbose_name = 'Статья'
