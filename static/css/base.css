@@ -6,7 +6,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .img_head {
     float: right;
-    margin-top: 1vh;
+    margin-top: 2vh;
     height: 8vh;
   }
   .text_head_l {
@@ -56,7 +56,7 @@
     font-size: 1rem;
   }
   .news_last {
-    min-height: 38vh;
+    min-height: 24vw;
     border-width: 0.3vh;
     border-style: solid;
     border-color: #465A78;
