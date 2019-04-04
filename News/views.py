@@ -14,4 +14,4 @@ from django.views.generic.list import ListView
 class NewsAll(ListView):
     context_object_name = 'news_all'
     template_name = 'News/news.html'
-    queryset = Post.objects.all()[0:10]
+    queryset = Post.objects.all().order_by('-date_cr')[0:10]

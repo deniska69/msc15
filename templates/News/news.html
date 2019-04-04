@@ -3,16 +3,22 @@
 {% block content %}
 
 <div class="container-fluid" style='margin-top: 1vh;'>
+  <text class="text_t">Новости</text>
+  <hr class="news_hr">
   {% for news in news_all %}
-  <div class="col-lg-4">
-    <div class="news_last">
-      {% if news.img_preview %}
-      <img src="{{ MEDIA_URL }}{{ news.img_preview.url }}" class="img_news">
-      {% else %}
-      <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
-      {% endif %}
-      <text class="text_t">{{ news.title }}</text><br>
-      <text class="text_d">{{ news.date_cr }}</text>
+  <div class="container-fluid" style="padding: 0;">
+    <div class="row no-gutters post_block_link" onclick="location.href='ЛИНК';">
+      <div class="col-lg-4" style="padding: 0;">
+        {% if news.img_preview %}
+        <img src="{{ MEDIA_URL }}{{ news.img_preview.url }}" class="img_news">
+        {% else %}
+        <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
+        {% endif %}
+      </div>
+      <div class="col-lg-7" style="padding-left: 10px;">
+        <text class="text_t">{{ news.title }}</text><br>
+        <text class="text_b" style="color: #7f7f7f;">{{ news.date_cr }}</text>
+      </div>
     </div>
   </div>
   {% endfor %}

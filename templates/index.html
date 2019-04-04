@@ -33,28 +33,29 @@
     <div class="col-lg-9">
       <text class="text_t">Новости</text>
       <hr class="news_hr" style="margin-right: 2px;">
+
+      {% for post in post_last %}
       <div class="container-fluid" style="padding: 0;">
-        <div class="row justify-content-center no-gutters">
-          {% for post in post_last %}
-            <div class="col-lg-4">
-              <div class="news_last">
-                {% if post.img_preview %}
-                <img src="{{ MEDIA_URL }}{{ post.img_preview.url }}" class="img_news">
-                {% else %}
-                <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
-                {% endif %}
-                <div class="col" style="padding: 0 0.5vw 0 0.5vw;">
-                  <text class="text_t" style="">{{ post.title }}</text><br>
-                </div>
-                <text class="text_d">{{ post.date_cr }}</text>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-        <div class="row justify-content-end" style="margin-right: 0; margin-top: 1vh;">
-          <a href="/news" class='text_b'>Все новости >></a>
+        <div class="row no-gutters post_block_link" onclick="location.href='ЛИНК';">
+          <div class="col-lg-4" style="padding: 0;">
+            {% if post.img_preview %}
+            <img src="{{ MEDIA_URL }}{{ post.img_preview.url }}" class="img_news">
+            {% else %}
+            <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
+            {% endif %}
+          </div>
+          <div class="col-lg-7" style="padding-left: 10px;">
+            <text class="text_t">{{ post.title }}</text><br>
+            <text class="text_b" style="color: #7f7f7f;">{{ post.date_cr }}</text>
+          </div>
         </div>
       </div>
+      {% endfor %}
+
+      <div class="row justify-content-end" style="margin-right: 0; margin-top: 1vh;">
+        <a href="/news" class='text_b'>Все новости >></a>
+      </div>
+
     </div>
 
     <!-- Директор -->

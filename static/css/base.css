@@ -7,14 +7,14 @@
     .img_head {
     float: right;
     margin-top: 2vh;
-    height: 8vh;
+    height: 6vw;
   }
   .text_head_l {
       font-family: 'Ropa Sans Pro', Arial;
       line-height: 1.1;
       color: #465A78;
-      margin-top: 1vh;
       font-size: 1.2rem;
+      margin-top: 1.7vw;
   }
   .text_head_r {
       font-family: 'Ropa Sans Pro', Arial;
@@ -101,6 +101,14 @@
   }
   .ftr_p {
     margin-bottom: 0.4rem;
+  }
+  .post_block_link {
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  .post_block_link:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 }
 
