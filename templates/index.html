@@ -37,7 +37,7 @@
       {% for post in post_last %}
       <div class="container-fluid" style="padding: 0;">
         <div class="row no-gutters post_block_link" onclick="location.href='ЛИНК';">
-          <div class="col-lg-4" style="padding: 0;">
+          <div class="col-lg-4 img_news_block" style="padding: 0;">
             {% if post.img_preview %}
             <img src="{{ MEDIA_URL }}{{ post.img_preview.url }}" class="img_news">
             {% else %}

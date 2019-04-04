@@ -69,11 +69,14 @@
     bottom: 0;
     right: 1vw;
   }
+  .img_news_block {
+    width: auto;
+    height: 18vw;
+  }
   .img_news {
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   .ftr {
     background-color: #465A78;
