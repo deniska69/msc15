@@ -105,6 +105,10 @@
   .ftr_p {
     margin-bottom: 0.4rem;
   }
+  .ftr_ico {
+    height: 1.2vw;
+    width: auto;
+  }
   .post_block_link {
     cursor: pointer;
     padding: 0;
