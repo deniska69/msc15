@@ -11,95 +11,97 @@
   </head>
   <body style="background-color: #F6F2F3;">
 
-    <!-- Шапка -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2" style="padding-right: 0;">
-          <img class="img_head" src="{% static "images/base/logo.png" %}">
+    <div class="container-width">
+      <!-- Шапка -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2" style="padding-right: 0;">
+            <img class="img_head" src="{% static "images/base/logo.png" %}">
+          </div>
+          <div class="col-lg-5">
+            <div class="text_head_l">
+              МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
+              ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ<br>
+              "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 15"
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="text_head_r">
+              Кемеровская область, Таштагольский район,<br>
+              п.г.т.Мундыбаш, ул.Ленина, 5<br>
+              8(38473)-63-8-40<br>
+              school@msc15.ru
+            </div>
+          </div>
+
         </div>
-        <div class="col-lg-5">
-          <div class="text_head_l">
-            МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
-            ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ<br>
-            "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 15"
+      </div>
+
+      <!-- Меню -->
+      <div class="container-fluid" style="margin-top: 2vh; padding-right: 14px; padding-left: 14px;">
+        <div class="row justify-content-center no-gutters">
+          <div class="col btn_menu_col">
+            <a href="/" class="btn_menu">Главная</a>
+          </div>
+          <div class="col btn_menu_col">
+            <a href="#" class="btn_menu">Сведения об ОУ</a>
+          </div>
+          <div class="col btn_menu_col">
+            <a href="#" class="btn_menu">Обучение</a>
+          </div>
+          <div class="col btn_menu_col">
+            <a href="#" class="btn_menu">ГИА и ОГЭ</a>
+          </div>
+          <div class="col btn_menu_col">
+            <a href="#" class="btn_menu">Приём в школу</a>
+          </div>
+          <div class="col btn_menu_col">
+            <a href="#" class="btn_menu">Контакты</a>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="text_head_r">
-            Кемеровская область, Таштагольский район,<br>
-            п.г.т.Мундыбаш, ул.Ленина, 5<br>
-            8(38473)-63-8-40<br>
-            school@msc15.ru
+      </div>
+
+      {% block content %}{% endblock content %}
+
+      <!-- Футер -->
+      <div class="container-fluid" style="padding: 0;">
+        <div class="row no-gutters">
+          <img class="ftr_img" src="{% static "images/base/logo_footer.svg" %}">
+        </div>
+        <div class="row no-gutters ftr">
+          <div class="col ftr-col ftr_text">
+            <p class="ftr_p">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
+            ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>
+            <p class="ftr_p">"СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ <br>ШКОЛА № 15"</p>
           </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Меню -->
-    <div class="container-fluid" style="margin-top: 2vh; padding-right: 14px; padding-left: 14px;">
-      <div class="row justify-content-center no-gutters">
-        <div class="col btn_menu_col">
-          <a href="/" class="btn_menu">Главная</a>
-        </div>
-        <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">Сведения об ОУ</a>
-        </div>
-        <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">Обучение</a>
-        </div>
-        <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">ГИА и ОГЭ</a>
-        </div>
-        <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">Приём в школу</a>
-        </div>
-        <div class="col btn_menu_col">
-          <a href="#" class="btn_menu">Контакты</a>
-        </div>
-      </div>
-    </div>
-
-    {% block content %}{% endblock content %}
-
-    <!-- Футер -->
-    <div class="container-fluid" style="padding: 0; margin-top: 3vh;">
-      <div class="row no-gutters">
-        <img class="ftr_img" src="{% static "images/base/logo_footer.svg" %}" style="height: 7vh; margin-right: 7vw; margin-bottom: -0.5vh;">
-      </div>
-      <div class="row no-gutters ftr">
-        <div class="col ftr-col ftr_text">
-          <p class="ftr_p">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
-          ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>
-          <p class="ftr_p">"СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ <br>ШКОЛА № 15"</p>
-        </div>
-        <div class="col ftr-col">
-          <ul class="list-unstyled">
-            <li><a class="ftr_a" href="/">Главная</a></li>
-            <li><a class="ftr_a" href="#">Сведения об ОУ</a></li>
-            <li><a class="ftr_a" href="#">Обучение</a></li>
-            <li><a class="ftr_a" href="#">ГИА и ОГЭ</a></li>
-            <li><a class="ftr_a" href="#">Приём в школу</a></li>
-            <li><a class="ftr_a" href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col ftr-col">
-          <ul class="list-unstyled">
-            <li><a class="ftr_a" href="https://teacher.msc15.ru/login/" target="_blank">Портал: Учитель</a></li>
-            <li><a class="ftr_a" href="https://ruobr.ru/accounts/login/" target="_blank">Электронная Школа 2.0.</a></li>
-            <li><a class="ftr_a" href="https://knigochey.wordpress.com/" target="_blank">Библиотека Онлайн</a></li>
-            <li><a class="ftr_a" href="http://school15mund.ucoz.ru/" target="_blank">Старая версия сайта</a></li>
-          </ul>
-        </div>
-        <div class="col ftr-col ftr_text">
-          <p class="ftr_p">Все права защищены.</p>
-          <p class="ftr_p">Запрещено любое копирование материалов ресурса без письменного согласия руководства ОУ.</p>
-          <p class="ftr_p">© 1930-2019</p>
-          <br>
-          <P class="ftr_p">Разработка сайта:</P>
-          <a class="ftr_a" href="https://vk.com/club177599561" target="_blank">
-            <img class="ftr_ico" src="{% static "images/base/vk_32x32.png" %}" style="vertical-align: top;">   TMD
-          </a>
+          <div class="col ftr-col">
+            <ul class="list-unstyled">
+              <li><a class="ftr_a" href="/">Главная</a></li>
+              <li><a class="ftr_a" href="#">Сведения об ОУ</a></li>
+              <li><a class="ftr_a" href="#">Обучение</a></li>
+              <li><a class="ftr_a" href="#">ГИА и ОГЭ</a></li>
+              <li><a class="ftr_a" href="#">Приём в школу</a></li>
+              <li><a class="ftr_a" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col ftr-col">
+            <ul class="list-unstyled">
+              <li><a class="ftr_a" href="https://teacher.msc15.ru/login/" target="_blank">Портал: Учитель</a></li>
+              <li><a class="ftr_a" href="https://ruobr.ru/accounts/login/" target="_blank">Электронная Школа 2.0.</a></li>
+              <li><a class="ftr_a" href="https://knigochey.wordpress.com/" target="_blank">Библиотека Онлайн</a></li>
+              <li><a class="ftr_a" href="http://school15mund.ucoz.ru/" target="_blank">Старая версия сайта</a></li>
+            </ul>
+          </div>
+          <div class="col ftr-col ftr_text">
+            <p class="ftr_p">Все права защищены.</p>
+            <p class="ftr_p">Запрещено любое копирование материалов ресурса без письменного согласия руководства ОУ.</p>
+            <p class="ftr_p">© 1930-2019</p>
+            <br>
+            <P class="ftr_p">Разработка сайта:</P>
+            <a class="ftr_a" href="https://vk.com/club177599561" target="_blank">
+              <img class="ftr_ico" src="{% static "images/base/vk_32x32.png" %}" style="vertical-align: top;">   TMD
+            </a>
+          </div>
         </div>
       </div>
     </div>

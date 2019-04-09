@@ -3,26 +3,33 @@
     src: url(../fonts/RopaSansProRegular.otf);
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .img_head {
+@media (min-width: 992px) and (max-width: 4095.98px) {
+  .deb {
+    border: 2px solid red;
+  }
+  .container-width {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .img_head {
     float: right;
     margin-top: 2vh;
-    height: 6vw;
+    width: inherit;
+    height: auto;
   }
   .text_head_l {
       font-family: 'Ropa Sans Pro', Arial;
       line-height: 1.1;
       color: #465A78;
       font-size: 1.2rem;
-      margin-top: 1.7vw;
+      margin-top: 1.5vw;
   }
   .text_head_r {
       font-family: 'Ropa Sans Pro', Arial;
       line-height: 1.1;
       text-align: right;
       color: #465A78;
-      margin-top: 1vh;
-      margin-right: 2vw;
+      margin-top: 1.5vw;
   }
   .btn_menu {
     color: #465A78;
@@ -71,7 +78,7 @@
   }
   .img_news_block {
     width: auto;
-    height: 18vw;
+    height: 180px;
   }
   .img_news {
     object-fit: cover;
@@ -80,11 +87,13 @@
   }
   .ftr {
     background-color: #465A78;
-    min-height: 20vh;
+    padding-bottom: 2vh;
   }
   .ftr_img {
-    display: block;
-    margin: 0 auto;
+    height: 45px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    margin-right: 70px;
   }
 .ftr_a:link, .ftr_a:visited, .ftr_a:active, .ftr_a:hover {
     color: #D9D5D6;
@@ -94,7 +103,7 @@
   }
   .ftr-col {
     line-height: 1.1;
-    margin-left: 3vw;
+    margin-left: 2vw;
     margin-top: 1vh;
   }
   .ftr_text {
@@ -106,8 +115,8 @@
     margin-bottom: 0.4rem;
   }
   .ftr_ico {
-    height: 1.2vw;
-    width: auto;
+    height: 12px;
+    height: 12px;
   }
   .post_block_link {
     cursor: pointer;
@@ -117,12 +126,9 @@
   .post_block_link:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
-}
-
-@media (min-width: 1200px) {}
-
-.btn_menu:hover, .btn_menu:active {
-  background-color: #465a78;
-  color: #F6F2F3;
-  text-decoration: none;
+  .btn_menu:hover, .btn_menu:active {
+    background-color: #465a78;
+    color: #F6F2F3;
+    text-decoration: none;
+  }
 }
