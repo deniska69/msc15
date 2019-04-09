@@ -11,7 +11,8 @@
   </head>
   <body style="background-color: #F6F2F3;">
 
-    <div class="container-width">
+    <!-- Контент -->
+    <div class="container-content">
       <!-- Шапка -->
       <div class="container-fluid">
         <div class="row">
@@ -62,13 +63,15 @@
       </div>
 
       {% block content %}{% endblock content %}
+    </div>
 
-      <!-- Футер -->
-      <div class="container-fluid" style="padding: 0;">
+    <!-- Футер -->
+    <div class="container-footer">
+      <div class="container-fluid">
         <div class="row no-gutters">
           <img class="ftr_img" src="{% static "images/base/logo_footer.svg" %}">
         </div>
-        <div class="row no-gutters ftr">
+        <div class="row no-gutters ftr_bg">
           <div class="col ftr-col ftr_text">
             <p class="ftr_p">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ<br>
             ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>

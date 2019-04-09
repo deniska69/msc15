@@ -7,5 +7,5 @@ from News.models import Post
 
 urlpatterns = [
     path('', views.NewsAll.as_view()),
-    path('<int:pk>/', views.NewsDetail.as_view()),
+    path('<int:pk>/', views.NewsDetail.as_view(), name='news_page'),
 ]

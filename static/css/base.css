@@ -7,7 +7,13 @@
   .deb {
     border: 2px solid red;
   }
-  .container-width {
+  .container-content {
+    height: auto;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .container-footer {
+    height: 210px;
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -62,6 +68,14 @@
     font-family: 'Ropa Sans Pro', Arial;
     font-size: 1rem;
   }
+  .text_news {
+    color: #465A78;
+    font-family: 'Ropa Sans Pro', Arial;
+    font-size: 1rem;
+    display: inline-block;
+    text-indent: 1.5em;
+    text-align: justify;
+  }
   .news_last {
     min-height: 24vw;
     border-width: 0.3vh;
@@ -85,13 +99,13 @@
     width: 100%;
     height: 100%;
   }
-  .ftr {
+  .ftr_bg {
     background-color: #465A78;
-    padding-bottom: 2vh;
+    height: 165px;
   }
   .ftr_img {
     height: 45px;
-    margin-bottom: -2px;
+    /*margin-bottom: -2px;*/
     margin-left: auto;
     margin-right: 70px;
   }

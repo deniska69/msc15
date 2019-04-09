@@ -3,23 +3,38 @@
 {% block title %}Новости | МБОУ СОШ № 15 пгт. Мундыбаш{% endblock title %}
 {% block content %}
 
-<div class="container-fluid" style='margin-top: 1vh;'>
-  <text class="text_t">Новости</text>
-  <hr class="news_hr">
+<div class="container-fluid" style='margin-top: 2vh;'>
 
   <div class="container-fluid" style="padding: 0;">
-    <div class="row no-gutters post_block_link" onclick="location.href='ЛИНК';">
-      <div class="col-lg-4 img_news_block" style="padding: 0;">
+    <div class="row no-gutters">
+
+
+      <div class="col-lg-5" style="padding: 0;">
         {% if news_detail.img_preview %}
         <img src="{{ MEDIA_URL }}{{ news_detail.img_preview.url }}" class="img_news">
         {% else %}
         <img src="{% static "images/index/news_preview.jpg" %}" class="img_news">
         {% endif %}
       </div>
+
+
       <div class="col-lg-7" style="padding-left: 10px;">
-        <text class="text_t">{{ news_detail.title }}</text><br>
-        <text class="text_b" style="color: #7f7f7f;">{{ news_detail.date_cr }}</text>
+
+        <div class="row no-gutters">
+          <div class="col">
+            <text class="text_t" style="font-size: 1.35rem;">{{ news_detail.title }}</text><br>
+          </div>
+          <div class="col text-right">
+            <text class="text_b text-muted">{{ news_detail.date_cr }}</text>
+          </div>
+        </div>
+
+        <hr class="news_hr">
+
+        <text class="text_news">{{ news_detail.text }}</text>
       </div>
+
+
     </div>
   </div>
 

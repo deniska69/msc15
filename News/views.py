@@ -8,4 +8,5 @@ class NewsAll(ListView):
 
 class NewsDetail(DetailView):
     model = Post
+    context_object_name = 'news_detail'
     template_name = 'News/news_page.html'
