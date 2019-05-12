@@ -4,7 +4,7 @@
     <div class="card w-75">
       <h5 class="card-header">{{ post.title }}</h5>
       <div class="card-body">
-        <p>{{ post.text }}</p>
+        <p>{{ post.text|safe }}</p>
         <a href="{% url 'post_pg' pk=post.id %}" class="btn btn-outline-danger btn-sm">Подробнее</a>
       </div>
       <div class="card-footer text-muted">

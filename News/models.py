@@ -5,7 +5,7 @@ User = get_user_model()
 class Post(models.Model):
     author = models.ForeignKey(User, null=True, verbose_name='Автор:', on_delete=models.SET_NULL)
     title = models.CharField(max_length=100, null=False, blank=False, verbose_name='Заголовок:')
-    text = models.CharField(max_length=1000, null=False, blank=True, verbose_name='Текст:')
+    text = models.CharField(max_length=5000, null=False, blank=True, verbose_name='Текст статьи:')
     date_cr = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания:')
     img_preview = models.ImageField(null=True, blank=True, upload_to='News/previews', verbose_name='Превью новости:')
 

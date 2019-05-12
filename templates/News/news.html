@@ -19,7 +19,7 @@
       <div class="col-lg-7" style="padding-left: 10px;">
         <text class="text_t">{{ news.title }}</text><br>
         <text class="text_b" style="color: #7f7f7f;">{{ news.date_cr }}</text>
-        <text class="text_b text-truncate" style="display: block">{{ news.text }}</text>
+        <text class="text_b text-truncate" style="display: block">{{ news.text|safe }}</text>
       </div>
     </div>
   </div>
