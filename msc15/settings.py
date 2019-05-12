@@ -35,6 +35,8 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     'UserProfiles',
     'News',
+    'django_summernote',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

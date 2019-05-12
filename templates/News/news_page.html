@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Новости | МБОУ СОШ № 15 пгт. Мундыбаш{% endblock title %}
+{% block title %}{{ news_detail.title }} | МБОУ СОШ № 15 пгт. Мундыбаш{% endblock title %}
 {% block content %}
 
 <div class="container-fluid" style='margin-top: 2vh;'>
 
+  <div class="row no-gutters">
+    <div class="col">
+      <text class="text_t" style="font-size: 1.35rem;">{{ news_detail.title }}</text><br>
+    </div>
+    <div class="col text-right">
+      <text class="text_b text-muted">{{ news_detail.date_cr }}</text>
+    </div>
+  </div>
+
+  <hr class="news_hr">
+
   <div class="container-fluid" style="padding: 0;">
     <div class="row no-gutters">
-
 
       <div class="col-lg-5" style="padding: 0;">
         {% if news_detail.img_preview %}
@@ -17,19 +27,11 @@
         {% endif %}
       </div>
 
-
       <div class="col-lg-7" style="padding-left: 10px;">
 
-        <div class="row no-gutters">
-          <div class="col">
-            <text class="text_t" style="font-size: 1.35rem;">{{ news_detail.title }}</text><br>
-          </div>
-          <div class="col text-right">
-            <text class="text_b text-muted">{{ news_detail.date_cr }}</text>
-          </div>
-        </div>
 
-        <hr class="news_hr">
+
+
 
         <text class="text_news">{{ news_detail.text }}</text>
       </div>

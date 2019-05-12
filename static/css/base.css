@@ -8,7 +8,6 @@
     border: 2px solid red;
   }
   .container-content {
-    /*height: auto;*/
     min-height: calc(100vh - 210px);
     max-width: 1024px;
     margin: 0 auto;
@@ -17,6 +16,10 @@
     height: 210px;
     max-width: 1024px;
     margin: 0 auto;
+  }
+  a:link, a:visited, a:active, a:hover {
+    cursor: pointer;
+    text-decoration:none;
   }
   .img_head {
     float: right;
@@ -110,7 +113,7 @@
     margin-left: auto;
     margin-right: 70px;
   }
-.ftr_a:link, .ftr_a:visited, .ftr_a:active, .ftr_a:hover {
+  .ftr_a:link, .ftr_a:visited, .ftr_a:active, .ftr_a:hover {
     color: #D9D5D6;
     font-size: 0.7rem;
     cursor: pointer;
