@@ -1,0 +1,6 @@
+bootstrap 4.2.1
+mysql-installer-community-8.0.15.0
+python-3.7.0-amd64
+atom
+github desktop
+filezilla
