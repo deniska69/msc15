@@ -47,7 +47,7 @@
           <div class="col-lg-7" style="padding-left: 10px;">
             <text class="text_t">{{ post.title }}</text><br>
             <text class="text_b" style="color: #7f7f7f;">{{ post.date_cr }}</text>
-            <text class="text_b text-truncate" style="display: block">{{ post.text }}</text>
+            <text class="text_b text-truncate" style="display: block">{{ post.text|safe }}</text>
           </div>
         </div>
       </div>
@@ -70,7 +70,13 @@
       <text class="text_b">
         direktor@msc15.ru
       </text>
+      <div class="row justify-content-center no-gutters" style="padding-top: 0.5vh;">
+        <div class="col btn_menu_col">
+          <a href="/" class="btn_menu">О школе</a>
+        </div>
+      </div>
     </div>
+
 
   </div>
 </div>

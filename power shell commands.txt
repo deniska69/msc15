@@ -1,0 +1,21 @@
+cd c:\dev\
+python -m venv venvmsc15
+venvmsc15\Scripts\activate
+python -m pip install --upgrade pip
+pip install Django==2.1.5
+pip install Pillow==5.4.1
+pip install mysqlclient
+pip install django-summernote
+easy_install django-validated-file
+pip list
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+django-admin startproject msc15
+python manage.py startapp NameApp
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+python manage.py createsuperuser --username=sudoadmin --email=gostev.dy@msc15.ru

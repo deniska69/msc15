@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'UserProfiles',
     'News',
     'django_summernote',
-    
+    'validatedfile',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
