@@ -1,1 +1,15 @@
-# Hi! Welcome to repository "msc15.ru" project.
+# Сайт для школы
+
+## Язык разработки:
+
+```
+Python + Django
+
+```
+
+## База данных:
+
+```
+MySQL
+
+```
